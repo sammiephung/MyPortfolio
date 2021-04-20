@@ -1,0 +1,575 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* --------------------------------------------- Font styles --------------------------------------------- */
+
+body {
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #1B1B1E;
+}
+
+h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #2A7DE1;
+}
+
+h3 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 170%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #2A7DE1;
+}
+
+
+/* ----- H1 Outlined -----*/
+h4 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: transparent;
+    margin-bottom: 10px;
+    -webkit-text-stroke: 1px #1B1B1E;
+    margin-bottom: 0;
+}
+
+h5 {
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 170%;
+    color: #828282;
+}
+
+p {
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 170%;
+    color: #1B1B1E;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* -------------------------------------------- Component styling ------------------------------------------- */
+
+.button {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    background: #FAA916;
+    border-radius: 50px;
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 170%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.button:hover {
+    background-color: #2A7DE1;
+}
+
+.button:active {
+    background-color: #2A4893;
+}
+
+/* --------------------------------------------- Header section --------------------------------------------- */
+
+#navBar {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 15%;
+}
+
+.navLogo {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.navLogo img {
+    width: 75px;
+}
+
+.menuItems {
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+}
+
+.menuItems a {
+    margin-left: 10%;
+    color: #4F4F4F;
+}
+
+.menuItems a:hover {
+    color: #2A7DE1;
+}
+
+.menuItems a:active {
+    color: #2A4893;
+}
+
+.menuItems .highlight {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #2A7DE1;
+}
+
+.hamburgerMenu {
+    cursor: pointer;
+    display: none;
+}
+
+.hamburgerMenu div {
+    width: 35px;
+    height: 3px;
+    background-color: #4f4f4f;
+    margin: 9px 0;
+    border-radius: 25px;
+}
+
+
+.topMobileNav {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0px 7%;
+    align-items: center;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    background-color: #2A7DE1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlayItems {
+    position: relative;
+    top: 5vh;
+    padding: 0px 7%;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overlayContent {
+    text-align: left;
+}
+
+.overlay h1 {
+    color: white;
+    margin-bottom: 8%;
+}
+
+.closebtn {
+    color: white;
+    font-size: 80px;
+}
+
+/* -------------------------------------------- Fixed side nav -------------------------------------------- */
+
+.sideNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    bottom: 14vh;
+    left: 9%;
+    z-index: 1;
+    width: 72vh;
+
+}
+
+.sideNav a {
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #BDBDBD;
+
+}
+
+.sideNav p {
+    color: #BDBDBD;
+}
+
+.sideNav a:hover {
+    color: #828282;
+}
+
+.sideNav a:active {
+    color: #4F4F4F;
+}
+
+/* --------------------------------------------- Hero section --------------------------------------------- */
+
+.jumbotron {
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    background-image: linear-gradient(180deg, white, #F1F0F0);
+}
+
+.headerPhone {
+    background-image: url(../images/phoneMockup.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    width: 60%;
+    margin-right: 14%;
+}
+
+.heroText {
+    margin: 0px;
+    margin-left: 15%;
+    padding-top: 20vh;
+    width: 85%;
+    min-width: 320px;
+}
+
+
+/* -------------------------------------------- Project outline --------------------------------------------- */
+
+.projectOutline {
+    padding: 50px 15%;
+    background-color: #2A7DE1;
+    height: 30vh;
+}
+
+.col-sm {
+    padding: 0px;
+}
+
+.projectOutline h3 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.projectOutline p {
+    line-height: 110%;
+    color: white;
+}
+
+/* ------------------------------------------ Problem Opportunity ------------------------------------------- */
+
+.problemOpp {
+    padding: 100px 15%;
+    position: relative;
+    height: auto;
+}
+
+.fullPhone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 40px;
+}
+
+.opportunity {
+    position: absolute;
+    bottom: 100px;
+    padding-right: 15%;
+}
+
+/* --------------------------------------------- Research Plan ---------------------------------------------- */
+
+.researchPlan {
+    height: auto;
+}
+
+.researchSummary {
+    text-align: center;
+    padding: 150px 23%;
+    background-image: linear-gradient(180deg, white, #F1F0F0);
+}
+
+.researchSummary h2 {
+    color: #1B1B1E;
+}
+
+/* ----------------------------------------------- Objectives ------------------------------------------------ */
+
+.objectives {
+    padding: 100px 15%;
+    height: auto;
+}
+
+.objectives .col-sm {
+    padding-right: 20px;
+}
+
+.objectives .col-sm p {
+    height: 90px;
+}
+
+.col-sm img {
+    margin: 0px;
+    width: 95%;
+}
+
+/* ----------------------------------------------- User Persona ------------------------------------------------ */
+
+.userPersona {
+    height: auto;
+    background-image: linear-gradient(180deg, white, #F1F0F0);
+}
+
+.userPersona .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userPersona img {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    max-width: 914px;
+    min-width: 300px;
+}
+
+/* --------------------------------------------- User Insight ---------------------------------------------- */
+
+.userInsight {
+    height: auto;
+}
+
+.insightSummary {
+    text-align: center;
+    padding: 150px 23%;
+    background-color: #2A7DE1;
+}
+
+.insightSummary h2,
+.insightSummary p {
+    color: white;
+}
+
+/* ----------------------------------------- Pioritization Matrix ------------------------------------------ */
+
+.featureMatrix {
+    padding: 150px 15%;
+    height: auto;
+}
+
+.featureText {
+    padding-right: 40px;
+}
+
+.featureMatrix img {
+    width: 100%;
+    max-width: 509px;
+    min-width: 350px;
+}
+
+/* --------------------------------------------- User journey ---------------------------------------------- */
+
+.userJourney {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    background-image: linear-gradient(180deg, white, #F1F0F0);
+}
+
+/* -------------------------------------------- Contact section --------------------------------------------- */
+
+.contactMe {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 25%;
+    align-items: center;
+}
+
+.contactMe h2 {
+    color: #1B1B1E;
+}
+
+.contactMe a:hover {
+    color: #2A7DE1;
+}
+
+.contactMe a:active {
+    color: #2A4893;
+}
+
+
+/* --------------------------------------------- Footer section --------------------------------------------- */
+
+footer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40vh;
+    background-color: #2A7DE1;
+}
+
+.footerLogo img {
+    width: 55px;
+}
+
+.footerItems {
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+    min-width: 320px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.footerItems a {
+    color: white;
+}
+
+.footerItems a:hover {
+    color: #FAA916;
+}
+
+.socialBlock {
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+    min-width: 280px;
+}
+
+
+/* ------------------------------------------- Mobile 600px screen ------------------------------------------ */
+
+@media only screen and (max-width: 768px) {
+
+    /* ----------------------------------- Header section --------------------------------- */
+
+    #navBar {
+        margin: 0px 7%;
+    }
+
+    .menuItems {
+        display: none;
+    }
+
+    .hamburgerMenu {
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 7%;
+    }
+
+    /* ----------------------------------- Hero Section ----------------------------------- */
+
+    .jumbotron .heroText {
+        margin: 0px 7%;
+        padding-top: 7vh;
+    }
+
+
+    .headline {
+        position: absolute;
+        top: 22%;
+        width: 86%;
+    }
+
+
+
+}
+
+
+
+
+
+
+/* ------------------------------------------- Mobile 425px screen ------------------------------------------ */
+
+@media only screen and (max-width: 425px) {
+
+    .navLogo img {
+        width: 55px;
+    }
+
+    .heroText {
+        padding-top: 5vh;
+
+
+
+
+
+
+
+
+    }
+}

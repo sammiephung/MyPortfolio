@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styleCase.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Red+Hat+Text:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sammie Phung | Tinit</title>
+</head>
+
+<body>
+
+    <!--                                   Header Section                                   -->
+
+    <header id="navBar">
+        <div class="navLogo">
+            <a href="index.html"><img src="images/blueLogo.svg"></a>
+        </div>
+        <div class="menuItems">
+            <a href="index.html">Work</a>
+            <a href="about.html">About Me</a>
+            <a href="https://drive.google.com/file/d/1fmXLjQiboOGOz95VLChyZ1LVLEGIUq6-/view?usp=sharing"
+                target="_blank">CV</a>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <div class="topMobileNav">
+                <div class="navLogo">
+                    <a href="index.html"><img src="images/greyLogo.svg"></a>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                </div>
+            </div>
+
+            <div class="overlayItems">
+                <div class="overlayContent">
+                    <a href="index.html">
+                        <h1>work</h1>
+                    </a>
+                    <a href="about.html">
+                        <h1>about me</h1>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1fmXLjQiboOGOz95VLChyZ1LVLEGIUq6-/view?usp=sharing">
+                        <h1>cv</h1>
+                    </a>
+                </div>
+                <div class="socialBlock">
+                    <a href="https://github.com/sammiephung"><img src="images/social/githubIcon.png"></a>
+                    <a href="https://www.instagram.com/sphung.exe"><img src="images/social/instaIcon.png"></a>
+                    <a href="https://www.linkedin.com/in/sammiephung/"><img src="images/social/linkedinIcon.png"></a>
+                    <a href="mailto: sammiephung@gmail.com?subject=Love your stuff, let's connect!"><img
+                            src="images/social/emailIcon.png"></a>
+                </div>
+            </div>
+        </div>
+
+        <span onclick="openNav()">
+            <div class="hamburgerMenu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </span>
+
+    </header>
+
+    <!--                                      Fixed Side Nav                                             -->
+
+    <nav class="sideNav">
+        <a href="#conclusion">conclusion</a>
+        <p>_</p>
+        <a href="#prototyping">prototyping</a>
+        <p>_</p>
+        <a href="#ideation">ideation</a>
+        <p>_</p>
+        <a href="#research">research</a>
+        <p>_</p>
+        <a href="#">overview</a>
+    </nav>
+
+    <!--                                   Hero Section                                        -->
+
+    <section class="jumbotron">
+        <div class="heroText">
+            <h1>tinit trip planner</h1>
+            <h5>A 4-week user experience exploration into a possible app solution for hands-on trip planners.</h5>
+        </div>
+        <div class="headerPhone"></div>
+    </section>
+
+    <section class="projectOutline">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm">
+                    <h3>my role</h3>
+                    <p>UX Researcher</p>
+                    <p>UX Designer</p>
+                </div>
+                <div class="col-sm">
+                    <h3>deliverables</h3>
+                    <p>User Research</p>
+                    <p>Lo-Fi Wireframes</p>
+                </div>
+                <div class="col-sm">
+                    <h3>tools used</h3>
+                    <p>Figma</p>
+                    <p>Miro</p>
+                    <p>Pen and paper</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--                                       Content Section                                   -->
+
+
+    <section class="problemOpp">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm">
+                    <h3>the problem</h3>
+                    <p>Hands-on travel planners have been inundated with overfilled and unfulfilled itineraries leading
+                        to less than ideal travel planning experiences.</p>
+                </div>
+                <div class="col-sm fullPhone">
+                    <img src="images/fullPhone.png">
+                </div>
+                <div class="col-sm">
+                    <div class="opportunity">
+                        <h3>the opportunity</h3>
+                        <p>Our app, tinit, plans to improve the travel planning experience by removing the clutter of
+                            over information, keep results relevant, and offer solutions for itinerary setting.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="researchPlan" id="research">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg researchSummary">
+                    <h2>user research plan</h2>
+                    <p>Conduct a series of six user interviews to gain a qualitative understanding of the existing
+                        audience and their travel experiences. Then analyze the findings and break them down into
+                        affinity diagrams and empathy maps in order to come up with a user persona. At the same time,
+                        use these tools to pinpoint any pain points and areas of opportunities for development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="objectives">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm">
+                    <h3>objective 1</h3>
+                    <p>Gain an understanding of the person’s past experiences with travelling.</p>
+                    <img src="images/objOne.png">
+                </div>
+                <div class="col-sm">
+                    <h3>objective 2</h3>
+                    <p>To understand the current steps and tools involved with travel planning.</p>
+                    <img src="images/objTwo.png">
+                </div>
+                <div class="col-sm">
+                    <h3>objective 3</h3>
+                    <p>To determine any past, current, or future red flags to look out for when planning.</p>
+                    <img src="images/objThree.png">
+                </div>
+            </div>
+    </section>
+
+    <section class="userPersona">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <img src="images/userPersona.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="userInsight" id="ideation">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col insightSummary">
+                    <h2>user insight</h2>
+                    <p>During the one-on-one interviews, we discovered that our users tend to cram too much into their
+                        itinerary with not enough time to do everything they had originally planned for. Therefore, we
+                        believe that we can help deliver a more satisfying trip experience if we gave users a platform
+                        with relevant activity details to more realistically organize their trips.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="row featureMatrix">
+            <div class="col featureText">
+                <h2>Feature prioritization matrix</h2>
+                <p>Using the I Like, I Wish, What If method, certain features were determined to be of more importance
+                    based off the user insight and problem statement. These features were then put into a prioritization
+                    matrix to understand feasibility and ease of implementation.</p>
+            </div>
+            <div class="col">
+                <img src="images/prioritizationMatrix.png">
+            </div>
+        </div>
+    </section>
+
+    <section class="userJourney">
+        <img src="images/userJourney.png">
+        <img src="images/opportunies.png">
+    </section>
+
+    <p style="text-align: center;">More to come... <br>user flow, prototype, testing, final notes... <br>need to also work on mobile...</p>
+
+    <!--                                        Footer Section                                      -->
+
+    <footer>
+        <div class="footerLogo">
+            <a href="index.html"><img src="images/greyLogo.svg"></a>
+        </div>
+        <div class="footerItems">
+            <a href="index.html">Work</a>
+            <a href="about.html">About Me</a>
+            <a href="https://drive.google.com/file/d/1fmXLjQiboOGOz95VLChyZ1LVLEGIUq6-/view?usp=sharing"
+                target="_blank">CV</a>
+        </div>
+        <div class="socialBlock">
+            <a href="https://github.com/sammiephung"><img src="images/social/githubIcon.png"></a>
+            <a href="https://www.instagram.com/sphung.exe"><img src="images/social/instaIcon.png"></a>
+            <a href="https://www.linkedin.com/in/sammiephung/"><img src="images/social/linkedinIcon.png"></a>
+            <a href="mailto: sammiephung@gmail.com?subject=Love your stuff, let's connect!"><img
+                    src="images/social/emailIcon.png"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+    <script src="js/index.js"></script>
+
+</body>
+
+
+</html>
