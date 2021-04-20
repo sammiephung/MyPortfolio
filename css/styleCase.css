@@ -254,20 +254,17 @@ a {
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: #BDBDBD;
+}
 
+.sideNav a:hover {
+    border-bottom: 1px solid currentColor;
 }
 
 .sideNav p {
     color: #BDBDBD;
 }
 
-.sideNav a:hover {
-    color: #828282;
-}
 
-.sideNav a:active {
-    color: #4F4F4F;
-}
 
 /* --------------------------------------------- Hero section --------------------------------------------- */
 
@@ -279,7 +276,7 @@ a {
 }
 
 .headerPhone {
-    background-image: url(../images/phoneMockup.png);
+    background-image: url(../images/tinit/phoneMockup.png);
     background-position: cover;
     background-repeat: no-repeat;
     background-position-y: bottom;
