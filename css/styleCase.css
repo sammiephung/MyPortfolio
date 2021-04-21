@@ -3,6 +3,26 @@
     scroll-behavior: smooth;
 }
 
+.jumbotron,
+.projectOutline,
+.sideNav {
+    animation: transitionIn .65s;
+
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+
+    to {
+        opacity: 1;
+        animation-timing-function: ease-out;
+
+    }
+}
+
 /* --------------------------------------------- Font styles --------------------------------------------- */
 
 body {
@@ -101,6 +121,7 @@ a {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition: 0.3s;
 }
 
 .button:hover {
@@ -229,6 +250,43 @@ a {
     font-size: 80px;
 }
 
+/* -------------------------------------------- Dropdown menu --------------------------------------------- */
+
+li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.subMenuParent {
+    position: relative;
+}
+
+.subMenu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: -19%;
+    padding: 0;
+    margin: 0;
+    width: 300%;
+    transform: translateY(-1em);
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.03s;
+    z-index: 1;
+}
+
+.subMenuParent:focus .subMenu,
+.subMenuParent:focus-within .subMenu,
+.subMenuParent:hover .subMenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.1s;
+    /* this removes the transition delay so the menu will be visible while the other styles transition */
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+
 /* -------------------------------------------- Fixed side nav -------------------------------------------- */
 
 .sideNav {
@@ -257,7 +315,7 @@ a {
 }
 
 .sideNav a:hover {
-    border-bottom: 1px solid currentColor;
+    font-weight: bolder;
 }
 
 .sideNav p {
@@ -270,28 +328,20 @@ a {
 
 .jumbotron {
     display: flex;
+    position: relative;
     justify-content: space-between;
     height: 50vh;
     background-image: linear-gradient(180deg, white, #F1F0F0);
+    padding: 3rem 15%
 }
 
-.headerPhone {
-    background-image: url(../images/tinit/phoneMockup.png);
-    background-position: cover;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: right;
-    width: 60%;
-    margin-right: 14%;
+.jumbotron img {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    width: 23%;
 }
 
-.heroText {
-    margin: 0px;
-    margin-left: 15%;
-    padding-top: 20vh;
-    width: 85%;
-    min-width: 320px;
-}
 
 
 /* -------------------------------------------- Project outline --------------------------------------------- */
@@ -324,7 +374,7 @@ a {
     height: auto;
 }
 
-.fullPhone{
+.fullPhone {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -438,6 +488,11 @@ a {
     background-image: linear-gradient(180deg, white, #F1F0F0);
 }
 
+.userJourney img {
+    width: 100%;
+    max-width: 1080px;
+}
+
 /* -------------------------------------------- Contact section --------------------------------------------- */
 
 .contactMe {
@@ -529,17 +584,7 @@ footer {
 
     /* ----------------------------------- Hero Section ----------------------------------- */
 
-    .jumbotron .heroText {
-        margin: 0px 7%;
-        padding-top: 7vh;
-    }
 
-
-    .headline {
-        position: absolute;
-        top: 22%;
-        width: 86%;
-    }
 
 
 
@@ -553,6 +598,26 @@ footer {
 /* ------------------------------------------- Mobile 425px screen ------------------------------------------ */
 
 @media only screen and (max-width: 425px) {
+
+    .sideNav {
+        display: none;
+    }
+
+    .jumbotron {
+        height: 95vh;
+        padding: 0px 7%;
+    }
+
+    .jumbotron img {
+        bottom: 0;
+        right: auto;
+        left: auto;
+        width: 80%;
+    }
+
+    .projectOutline {
+        height: auto;
+    }
 
     .navLogo img {
         width: 55px;

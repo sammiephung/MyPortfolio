@@ -2,6 +2,25 @@
     margin: 0;
 }
 
+.heroSection,
+.mySkills {
+    animation: transitionIn .65s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        animation-timing-function: ease-in;
+
+    }
+
+    to {
+        opacity: 1;
+        animation-timing-function: ease-out;
+
+    }
+}
+
 /* --------------------------------------------- Font styles --------------------------------------------- */
 
 body {
@@ -100,6 +119,7 @@ a {
     line-height: 170%;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    transition: 0.3s;
 }
 
 .button:hover {
@@ -227,6 +247,44 @@ a {
     color: white;
     font-size: 80px;
 }
+
+/* -------------------------------------------- Dropdown menu --------------------------------------------- */
+
+li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.subMenuParent {
+    position: relative;
+}
+
+.subMenu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: -19%;
+    padding: 0;
+    margin: 0;
+    width: 300%;
+    transform: translateY(-1em);
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.03s;
+}
+
+.subMenuParent:focus .subMenu,
+.subMenuParent:focus-within .subMenu,
+.subMenuParent:hover .subMenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.1s;
+    /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+
+
+
 
 /* --------------------------------------------- Hero section --------------------------------------------- */
 

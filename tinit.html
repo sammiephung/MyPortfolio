@@ -25,7 +25,14 @@
             <a href="index.html"><img src="images/blueLogo.svg"></a>
         </div>
         <div class="menuItems">
-            <a href="index.html">Work</a>
+            <li class="subMenuParent" tab-index="0">
+                <a href="index.html">Work</a>
+                <ul class="subMenu">
+                    <li><a href="tinit.html" class="highlight">Tinit</a></li>
+                    <li><a href="#">Presto</a></li>
+                    <li><a href="#">Not Amazon</a></li>
+                </ul>
+            </li>
             <a href="about.html">About Me</a>
             <a href="https://drive.google.com/file/d/1fmXLjQiboOGOz95VLChyZ1LVLEGIUq6-/view?usp=sharing"
                 target="_blank">Resume</a>
@@ -90,11 +97,18 @@
     <!--                                   Hero Section                                        -->
 
     <section class="jumbotron">
-        <div class="heroText">
-            <h1>tinit travel planner</h1>
-            <h5>A 4-week user experience exploration into a possible app solution for hands-on travel planners.</h5>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm">
+                    <h1>tinit travel planner</h1>
+                    <h5>A 4-week user experience exploration into a possible app solution for hands-on travel planners.
+                    </h5>
+                </div>
+                <div class="col">
+                    <img src="images/tinit/phoneMockup.png">
+                </div>
+            </div>
         </div>
-        <div class="headerPhone"></div>
     </section>
 
     <section class="projectOutline">
