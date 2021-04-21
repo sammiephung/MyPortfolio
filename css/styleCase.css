@@ -266,10 +266,10 @@ li {
     opacity: 0;
     position: absolute;
     top: 100%;
-    left: -19%;
+    left: -5%;
     padding: 0;
     margin: 0;
-    width: 300%;
+    width: 150%;
     transform: translateY(-1em);
     transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.03s;
     z-index: 1;
