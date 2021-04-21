@@ -752,6 +752,7 @@ footer {
 
     .scrollDown {
         width: 86%;
+        bottom: 1rem;
     }
 
     .toolsSection {
