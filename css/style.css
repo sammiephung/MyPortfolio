@@ -237,6 +237,7 @@ a {
 
 .overlayContent {
     text-align: left;
+    white-space: nowrap;
 }
 
 .overlay h1 {
@@ -752,7 +753,7 @@ footer {
 
     .scrollDown {
         width: 86%;
-        bottom: 1rem;
+        bottom: 0.5rem;
     }
 
     .toolsSection {
