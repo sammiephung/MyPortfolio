@@ -752,8 +752,11 @@ footer {
     }
 
     .scrollDown {
-        width: 86%;
-        bottom: 0.5rem;
+        display: none;
+    }
+
+    .myWorkGrid {
+        padding-top: 50px;
     }
 
     .toolsSection {
