@@ -376,6 +376,9 @@ li {
     width: 90%;
     height: 350px;
     background-color: lightgray;
+    background-image: url(../images/home/tinitMock.jpg);
+    background-size: cover;
+    background-position: center;
     margin-bottom: 100px;
 }
 
@@ -384,6 +387,9 @@ li {
     width: 90%;
     height: 350px;
     background-color: lightgray;
+    background-image: url(../images/home/prestoMock.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #imageThree {
@@ -391,6 +397,9 @@ li {
     width: 90%;
     height: 350px;
     background-color: lightgray;
+    background-image: url(../images/home/notAmazonMock.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #descripOne {
@@ -441,7 +450,7 @@ li {
 }
 
 .toolsSection {
-    background-image: linear-gradient(180deg, white, #F1F0F0);
+    background-image: white;
     padding: 5rem 15%;
 }
 
@@ -518,6 +527,21 @@ li {
 .trelloBar {
     width: 75%;
 }
+
+/* -------------------------------------------- Experience section --------------------------------------------- */
+
+.experienceSection {
+    background-image: linear-gradient(180deg, white, #F1F0F0);
+    padding: 5rem 15%;
+}
+
+.experienceSection h2 {
+    text-align: center;
+    margin: 10px;
+    color: #1B1B1E;
+}
+
+
 
 /* -------------------------------------------- Contact section --------------------------------------------- */
 
