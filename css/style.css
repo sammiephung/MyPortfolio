@@ -137,6 +137,11 @@ a {
     height: 20vh;
     display: flex;
     flex-direction: row;
+    /*
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 1040px; */
     margin: 0px 15%;
 }
 
@@ -450,7 +455,8 @@ li {
 }
 
 .toolsSection {
-    background-image: white;
+    background-image: linear-gradient(180deg, white, #F1F0F0);
+    /* background-image: white; */
     padding: 5rem 15%;
 }
 
