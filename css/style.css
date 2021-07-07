@@ -379,32 +379,44 @@ li {
 #imageOne {
     grid-area: imageOne;
     width: 90%;
-    height: 350px;
-    background-color: lightgray;
-    background-image: url(../images/home/tinitMock.jpg);
+    margin-bottom: 100px;
+}
+
+#imageOne a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background: url(../images/home/tinitMock.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: 100px;
+    height: 350px;
 }
 
 #imageTwo {
     grid-area: imageTwo;
     width: 90%;
-    height: 350px;
-    background-color: lightgray;
-    background-image: url(../images/home/prestoMock.jpg);
+    margin-bottom: 100px;
+}
+
+#imageTwo a {
+    display: block;
+    background: url(../images/home/prestoMock.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    height: 350px;
 }
 
 #imageThree {
     grid-area: imageThree;
     width: 90%;
-    height: 350px;
-    background-color: lightgray;
-    background-image: url(../images/home/notAmazonMock.jpg);
+}
+
+#imageThree a {
+    display: block;
+    background: url(../images/home/notAmazonMock.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    height: 350px;
 }
 
 #descripOne {
