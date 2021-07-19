@@ -7,6 +7,11 @@
 .projectOutline,
 .sideNav {
     animation: transitionIn .65s;
+}
+
+
+.responsiveGoogleSlides {
+    animation: transitionIn 1s;
 
 }
 
@@ -285,6 +290,27 @@ li {
     /* this removes the transition delay so the menu will be visible while the other styles transition */
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 1;
+}
+
+/* --------------------------------------------- iframe --------------------------------------------- */
+
+.responsiveGoogleSlides {
+    position: relative;
+    padding-bottom: 42%;
+    /* 16:9 Ratio */
+    overflow: hidden;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 100px;
+}
+
+.responsiveGoogleSlides iframe {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 /* -------------------------------------------- Fixed side nav -------------------------------------------- */
@@ -582,8 +608,14 @@ footer {
         right: 7%;
     }
 
-    /* ----------------------------------- Hero Section ----------------------------------- */
+    /* ----------------------------------- iframe ----------------------------------- */
 
+    .responsiveGoogleSlides {
+        padding-bottom: 58%;
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-bottom: 3rem;
+       }
 
 
 
@@ -598,6 +630,10 @@ footer {
 /* ------------------------------------------- Mobile 425px screen ------------------------------------------ */
 
 @media only screen and (max-width: 425px) {
+
+
+
+
 
     .sideNav {
         display: none;

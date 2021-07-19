@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styleCase.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Red+Hat+Text:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
@@ -11,31 +13,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta property="og:title" content="Sammie Phung | UX Portfolio" />
-    <meta property="og:image" content="https://i.ibb.co/wYRQY8x/Website-Thumbnail.png" />
-    <meta property="og:description" content="UX and UI assignment case studies" />
-    <meta property="og:url" content="https://www.sammiephung.com" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="627" />
-    <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
-    <meta property="og:type" content="website" />
-
-    <title>Sammie Phung | UX Portfolio</title>
+    <title>Sammie Phung | Presto</title>
 </head>
 
 <body>
+
+    <!--                                   Header Section                                   -->
+
     <header id="navBar">
         <div class="navLogo">
             <a href="index.html"><img src="images/blueLogo.svg"></a>
         </div>
         <div class="menuItems">
             <li class="subMenuParent" tab-index="0">
-                <a href="index.html" class="highlight">projects</a>
+                <a href="index.html">projects</a>
                 <ul class="subMenu">
                     <li><a href="tinit.html">Tinit</a></li>
-                    <li><a href="#">Presto</a></li>
-                    <li><a href="#">Not Amazon</a></li>
+                    <li><a href="presto.html" class="highlight">Presto</a></li>
+                    <li><a href="notamazon.html">Not Amazon</a></li>
                 </ul>
             </li>
             <a href="about.html">About Me</a>
@@ -55,7 +50,7 @@
 
             <div class="overlayItems">
                 <div class="overlayContent">
-                    <a href="index.html" class="overlayActive">
+                    <a href="index.html">
                         <h1>work</h1>
                     </a>
                     <a href="about.html">
@@ -70,8 +65,8 @@
                             src="images/social/githubIcon.png"></a>
                     <a href="https://www.instagram.com/sphung.exe" target="_blank"><img
                             src="images/social/instaIcon.png"></a>
-                    <a href="https://www.linkedin.com/in/sammiephung/"><img src="images/social/linkedinIcon.png"
-                            target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/sammiephung/" target="_blank"><img
+                            src="images/social/linkedinIcon.png"></a>
                     <a href="mailto: sammiephung@gmail.com?subject=Love your stuff, let's connect!"><img
                             src="images/social/emailIcon.png"></a>
                 </div>
@@ -88,56 +83,16 @@
 
     </header>
 
+    <!--                                             Content                                           -->
 
 
-    <section class="heroSection">
-        <div class="headline">
-            <h1>Hello, I’m Sammie</h1>
-            <h5>I’ve been a creative in advertising and marketing for over six years, now finally making the transition
-                as a UX Designer.</h5>
-            <a href="about.html" class="findOutMore button">Find out more</a>
-        </div>
-        <div class="profile">
-            <img src="images/Illustration.svg">
-        </div>
-        <div class="scrollDown">
-            <a href="#projects">Scroll for projects<br>&#x2193</a>
-        </div>
-    </section>
+    <div class="responsiveGoogleSlides">
+        <iframe
+            src="https://docs.google.com/presentation/d/e/2PACX-1vSN-_a5iVpDQ1Q6ihsTdSmiw6Cgw_VmPcZ93U87ccN1VOABqr7UIXeZaDbwikeG-IcTXj7RAMM4EhjB/embed?start=true&loop=true&delayms=5000&slide=id.g35f391192_00"
+            frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
 
-
-
-    <section class="myWorkGrid" id="projects">
-        <div id="imageOne">
-            <a href="tinit.html">
-            </a>
-        </div>
-        <div id="descripOne">
-            <h3>"tinit" travel planner</h3>
-            <p>4-week solo product exploration into a possible app solution for hands-on trip planners.</p>
-            <a href="tinit.html" class="caseStudyButton button">view case study</a>
-        </div>
-        <div id="imageTwo">
-            <a href="presto.html">
-        </div>
-        </a>
-        <div id="descripTwo">
-            <h3>"presto" feature add</h3>
-            <p>3-week team UX exercise into making PRESTO the go-to commuter’s app for daily transit planning.
-            </p>
-            <a href="presto.html" class="caseStudyButton button">view case study</a>
-        </div>
-        <div id="imageThree">
-            <a href="notamazon.html">
-        </div>
-        </a>
-        <div id="descripThree">
-            <h3>"not amazon" redesign</h3>
-            <p>3-week team UX redesign of a start up e-commerce site geared towards supporting local vendors.
-            </p>
-            <a href="notamazon.html" class="caseStudyButton button">view case study</a>
-        </div>
-    </section>
+    <!--                                        Footer Section                                      -->
 
     <footer>
         <div class="footerLogo">
@@ -159,6 +114,9 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
     <script src="js/index.js"></script>
 
 </body>
