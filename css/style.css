@@ -360,6 +360,10 @@ li {
     color: #BDBDBD;
 }
 
+.headlineAbout p {
+    margin: 10px 0px;
+}
+
 /* --------------------------------------------- Work section --------------------------------------------- */
 
 .myWorkGrid {
